@@ -1,0 +1,77 @@
+/*
+* .Checkbox
+*/
+
+.checkbox,
+.radio {
+}
+.checkbox:hover,
+.radio:hover {
+  cursor:pointer;
+}
+
+.checkbox input,
+.radio input {
+  // 不使用 display:none 是为了兼容验证插件
+  position: fixed;
+  left: -9999px;
+}
+.checkbox span,
+.radio span{
+  
+}
+
+.checkbox input+i,
+.radio input+i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background:url(../images/form.png) no-repeat 0 -24px;
+  margin-right: 3px;
+  position: relative;
+  top: 3px;
+}
+.checkbox input:checked+i {
+  background-position: -16px -24px;
+}
+.radio input+i {
+  background-position: -32px -24px;
+}
+.radio input:checked+i {
+  background-position: -48px -24px;
+}
+
+.checkbox-large input+i,
+.radio-large input+i{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.checkbox-small input+i,
+.radio-small input+i{
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.radio-small input+i{
+  background-position: -32px -24px;
+}
+.radio-small input:checked+i{
+  background-position: -48px -24px;
+}
+
+
+/*
+* 优雅降级 ie6-8
+*/
+.ie .checkbox input,
+.ie .radio input{
+  position: static;
+  vertical-align: middle;
+}
+.ie .checkbox i,
+.ie .radio i{
+  display: none;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "fd",
+  "version": "1.0.0",
+  "description": "# Build",
+  "main": "build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-css": "^3.4.19",
+    "colors": "^1.1.2",
+    "js-yaml": "^3.6.1",
+    "node-sass": "^3.10.1",
+    "rollup": "^0.33.2",
+    "rollup-plugin-includepaths": "^0.1.5",
+    "rollup-plugin-memory": "^1.0.0",
+    "uglify-js": "^2.7.3"
+  }
+}

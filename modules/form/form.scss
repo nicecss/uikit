@@ -1,0 +1,24 @@
+.form  fieldset {
+  border: none;
+}
+.form fieldset .f-label {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+  width: 112px;
+  // vertical-align: top;
+  // position: relative;
+  // top: 13px;
+}
+
+.form fieldset label.long {
+	width: 300px;
+}
+
+.form label.input-orange {
+  margin-left: 10px;
+}
+
+.form-m20 fieldset{
+  padding-bottom: 20px;
+}

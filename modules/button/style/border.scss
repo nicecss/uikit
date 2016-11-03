@@ -1,0 +1,33 @@
+#{$btn-namespace}-border {
+  background: none;
+  &:hover{
+    background: #fff;
+    color: $btn-color;
+  }
+  &:active {
+    // background: #eee;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .3);
+    border-color: darken($btn-background, 12%);
+  }
+
+  @each $btn-color in $btn-colors {
+    $btn-name: nth($btn-color, 1);
+    $btn-background: nth($btn-color, 2);
+    $btn-color: nth($btn-color, 3);
+    $btn-name-namespace: $btn-namespace + '-' + $btn-name;
+    &#{$btn-name-namespace} {
+      border-color: #DFDFDF;
+      color: $btn-background;
+      &:hover{
+        // background: desaturate($btn-background, 10%);
+        // color: $btn-color;
+        border-color: desaturate($btn-background, 10%);
+      }
+      &:active {
+        // background: desaturate($btn-background, 10%);
+        text-shadow: 0 1px 0 rgba(255, 255, 255, .3);
+        border-color: darken($btn-background, 12%);
+      }
+    }
+  }
+}

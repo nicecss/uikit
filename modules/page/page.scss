@@ -1,0 +1,70 @@
+$page-radius: 3px;
+$page-color: #575E79;
+$page-border-color: #DAE1E8;
+$page-now-backgrond-color: #F1F5F9;
+$page-border-width: 1px;
+$page-height: 36px;
+
+.page {
+  font-size: 0;
+  -webkit-user-select:none;
+  // height: $page-height - $page-border-width;
+  line-height: $page-height - $page-border-width;
+}
+.page a {
+  color: $page-color;
+  padding:0 10px;
+  min-width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin-right: -#{$page-border-width};
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle; /*ie678 解决汉子和数字上下不对齐*/
+  background-color: #fff;
+  border: $page-border-width solid $page-border-color;
+}
+.page a:first-child {
+  border-top-left-radius: $page-radius;
+  border-bottom-left-radius: $page-radius;
+}
+.page a:last-child {
+  border-top-right-radius: $page-radius;
+  border-bottom-right-radius: $page-radius;
+}
+.page a.now,.page a:hover {
+  background-color: $page-now-backgrond-color;
+}
+.page a.disabled {
+  color: #999999;
+}
+.page.page-right{
+  text-align: right;
+}
+.page.page-right a {
+  margin-right: 0;
+  margin-left: -#{$page-border-width};
+}
+
+.page .page-prev i,
+.page .page-next i {
+  background: url(../images/form.png) no-repeat 0 -60px;
+  width: 10px;
+  height: 9px;
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+.page .page-next i {
+  background-position: -14px -60px;
+}
+
+.pages .page {
+  display: inline;
+}
+
+/*兼容*/
+.ie6 .page a.disabled{
+  background-color: transparent !important;
+  color: #999;
+}

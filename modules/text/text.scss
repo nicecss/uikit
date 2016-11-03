@@ -1,0 +1,89 @@
+.text-bold {
+  font-weight: bold !important;
+}
+
+.text-italic {
+  font-style: italic !important;
+}
+
+.text-underline {
+  text-decoration: underline !important;
+}
+
+.text-line-through {
+  text-decoration: line-through !important;
+}
+
+.align-left {
+  text-align: left !important;
+}
+
+.align-right {
+  text-align: right !important;
+}
+
+.align-center {
+  text-align: center !important;
+}
+
+.align-justify {
+  text-align: justify;
+  text-align-last:justify;
+}
+.align-moddle,.align-middle{
+  vertical-align: middle !important;
+}
+.align-top{
+  vertical-align: top;
+}
+.align-sub{
+  vertical-align: sub;
+}
+.align-text-top{
+  vertical-align: text-top;
+}
+
+.text-tiny {
+  font-size: 10px !important;
+}
+.white-space {
+  white-space: nowrap;
+}
+
+.text-small {
+  font-size: 12px !important;
+}
+.text-default {
+  font-size: 14px !important;
+}
+
+.text-large {
+  font-size: 16px !important;
+}
+
+.text-larger {
+  font-size: 18px !important;
+}
+
+.text-opacity {
+  opacity: 0.5;
+}
+
+.text{
+  color: $text !important;
+}
+
+.text-light{
+  color: $text-light !important;
+}
+
+
+.text-dark{
+  color: $text-dark !important;
+}
+
+a.text:hover,
+a.text-light:hover,
+a.text-dark:hover{
+  color: $link !important;
+}
