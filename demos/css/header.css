@@ -1,0 +1,69 @@
+.common-header {
+  height: 50px;
+}
+.common-header {
+  background-color: #2DBF7D;
+}
+.theme-teacher .common-header {
+  background-color: #45A1F5;
+}
+.common-header a{
+  text-decoration: none;
+}
+.common-header a:hover{
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.common-header .on-right {
+  float: right;
+}
+
+.common-header .common-logo {
+  margin: 5px 0 0 10px;
+}
+
+.common-header-user{
+  font-size: 12px;
+  float: right;
+  margin: 15px 20px 0 0;
+}
+.common-header-user img{
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.common-header a {
+  color: #ECF1F5;
+}
+
+.common-header .c7cbbf2 {
+  color: #7cbbf2;
+}
+
+.common-header .margin-right-5 {
+  margin-right: 5px;
+}
+
+.common-header img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+  font-size: 0;
+}
+.common-header .logo-white{
+  margin-top: 5px;
+}
+.common-header-white {
+  background-color: #FFFFFF;
+}
+
+.common-header .vline{
+  border-left: 1px solid #4CCA9A;
+  height: 20px;
+  margin-left: 7px;
+  padding-left: 10px;
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}

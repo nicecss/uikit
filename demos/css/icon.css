@@ -1,0 +1,146 @@
+.icon-large {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+  width: 22px;
+  height: 22px;
+  background: url(../images/icon-large.png) no-repeat 0 0;
+  vertical-align: middle;
+}
+
+.icon-large-say {
+  background-position: 0px 0px;
+}
+
+.icon-large-shutdown {
+  background-position: -22px 0px;
+}
+
+.icon-large-bell {
+  background-position: -44px 0px;
+}
+
+.icon-large-bell-t {
+  background-position: 0 0px;
+}
+
+.icon-large-shutdown-blue {
+  background-position: -66px 0px;
+}
+
+.icon-large-home {
+  background-position: -88px 0px;
+}
+
+.icon-large-nav {
+  background-position: -198px 0px;
+}
+
+.icon-large-nav-open {
+  background-position: 0 -22px;
+}
+
+.icon-large-task {
+  background-position: -110px 0px;
+}
+
+.icon-large-err {
+  background-position: -132px 0px;
+}
+
+.icon-large-learn {
+  background-position: -154px 0px;
+}
+
+.icon-large-practice {
+  background-position: -176px 0px;
+}
+
+.icon-large-unfinished {
+  background-position: -22px -22px;
+}
+
+.icon-large-sethead {
+  background-position: -88px -22px;
+}
+
+.icon-large-questions {
+  background-position: -66px -22px;
+}
+
+.icon-large-class {
+  background-position: -44px -22px;
+}
+
+.icon-large-time {
+  background-position: -198px -22px;
+}
+
+.icon-large-search {
+  background-position: 0px -44px;
+}
+
+.icon-large-search-white {
+  background-position: -22px -44px;
+}
+
+.icon-large-close {
+  background-position: -44px -44px;
+}
+
+.icon-large-refresh {
+  background-position: -66px -44px;
+}
+
+.icon-large-move {
+  background-position: -88px -44px;
+}
+.icon-large-delete {
+  background-position:  -110px -44px;
+}  
+.icon-large-back {
+  background-position: -132px -44px;
+}
+
+.icon-large-toggle {
+  background-position: -110px -22px;
+}
+
+.icon-large-toggle:hover {
+  cursor: pointer;
+  background-position: -154px -22px;
+}
+
+.js-toggle-none .icon-large-toggle {
+  background-position: -132px -22px;
+}
+
+.js-toggle-none .icon-large-toggle:hover {
+  background-position: -176px -22px;
+}
+
+.sprites {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+  background: url(../images/sprites.png) no-repeat 0 0;
+  vertical-align: middle;
+}
+
+.sprites-time {
+  width: 25px;
+  height: 25px;
+  background-position: 0 0;
+}
+
+.sprites-ok {
+  width: 60px;
+  height: 60px;
+  background-position: -28px 0;
+}
+
+.sprites-refresh {
+  width: 12px;
+  height: 12px;
+  background-position: 0 -32px;
+}

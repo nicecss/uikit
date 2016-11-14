@@ -9,8 +9,8 @@ theme: 孩子王
 out:
   - ui/ui.css
   - ui/ui.js
-  - docs/css/ui.min.css
-  - docs/js/ui.min.js
+  - demos/css/ui.min.css
+  - demos/js/ui.min.js
 
 # 模块列表
 modules:

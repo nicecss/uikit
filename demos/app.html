@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/ui.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/ui.min.js"></script>
+  <script src="js/app.js"></script>
+</head>
+
+<body>
+  <!-- 模板 header -->
+  <script id="header" type="text/html">
+    <div class="common-header">
+      <div class="page-center"></div>
+    </div>
+  </script>
+
+  <!-- 模板 nav -->
+  <script id="nav" type="text/html">
+    <div class="common-nav">
+      <ul class="u-menu">
+        {{each nav_data.list as value i}}
+        <li><a onclick="renderHtml('html/{{value}}.html', {content: '首页'})" {{if nav_data.now==i}}class="now"{{/if}}>{{value}}</a></li>
+        {{/each}}
+      </ul>
+    </div>
+  </script>
+
+  <!-- 模板 main -->
+  <script id="main" type="text/html">
+    <div class="common-main"></div>
+  </script>
+
+  <!-- 模板 layout -->
+  <script id="layout" type="text/html">
+    {{include 'header'}}
+    <div class="common-content">
+      <div class="page-center">
+        {{include 'nav'}} {{include 'main'}}
+      </div>
+    </div>
+  </script>
+
+  <script>
+  var nav_data = {
+    list: ['uxkit', '表格', '按钮', '班级管理'],
+    now: 0
+  };
+  var page_data = {
+    nav_data: nav_data
+  };
+  var tpl = template('layout', page_data);
+  document.body.innerHTML = tpl;
+  </script>
+
+</body>
+
+</html>

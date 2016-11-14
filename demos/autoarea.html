@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/ui.min.css">
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/ui.min.js"></script>
+</head>
+
+<body>
+  <div class="margin-20">
+    <div class="column">
+      <div class="col-2-1">
+        <h3 class="text-larger margin-bottom-20">固定高度</h3>
+        <textarea class="textarea">
+abc
+abc
+abc
+abc
+abc
+abc
+abc
+abc
+abc
+abc
+        </textarea>
+      </div>
+      <div class="col-2-1">
+        <h3 class="text-larger margin-bottom-20">自适应高度</h3>
+        <textarea class="textarea" autoarea>
+abc
+abc
+abc
+abc
+abc
+abc
+abc
+abc
+abc
+abc
+        </textarea>
+      </div>
+    </div>
+  </div>
+  <script>
+  $('[autoarea]').autoarea();
+  </script>
+</body>
+
+</html>

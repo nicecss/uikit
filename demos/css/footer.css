@@ -1,0 +1,12 @@
+/*公共底部*/
+.common-footer {
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 40px 0;
+}
+.common-footer p{
+  font-size: 14px;
+  line-height: 26px;
+  margin:0;
+  padding:0;
+}
