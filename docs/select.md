@@ -4,9 +4,8 @@ tags: select
 
 #select
 
-##select
+###select size
  ``` html  
- <h2 class="demo-h2">Select</h2>
     <article>
       <label class="select select-larger">
         <select name="demo">
@@ -34,4 +33,6 @@ tags: select
         <i></i>
       </label>
     </article>
-     ``` 
+ ```
+
+
