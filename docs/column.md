@@ -1,7 +1,6 @@
 ---
 title: column
 tags: column组件
-
 ### column2
  ``` html  
    <div class="column">
@@ -12,7 +11,7 @@ tags: column组件
           <p class="col-num">1/2</p>
         </div>
    </div>
-   ```
+  ```
 ### column3
  ``` html  
   <div class="column">
