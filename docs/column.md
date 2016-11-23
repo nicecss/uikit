@@ -1,8 +1,81 @@
 ---
-title: 2016-11-23未命名文件 
-tags: 新建,模板,小书匠
-grammar_cjkRuby: true
----
+title: column
+tags: column组件
 
+### column2
+ ``` html  
+   <div class="column">
+        <div class="col-2-1">
+          <p class="col-num">1/2</p>
+        </div>
+        <div class="col-2-1">
+          <p class="col-num">1/2</p>
+        </div>
+   </div>
+   ```
+### column3
+ ``` html  
+  <div class="column">
+        <div class="col-3-1">
+          <p class="col-num">1/3</p>
+        </div>
+        <div class="col-3-1">
+          <p class="col-num">1/3</p>
+        </div>
+        <div class="col-3-1">
+          <p class="col-num">1/3</p>
+        </div>
+     </div>
+ ```
+### column4
+ ``` html  
+  <div class="column">
+        <div class="col-3-1">
+          <p class="col-num">1/3</p>
+        </div>
+        <div class="col-3-1">
+          <p class="col-num">1/3</p>
+        </div>
+        <div class="col-3-1">
+          <p class="col-num">1/3</p>
+        </div>
+     </div>
+ ```
+### column5
+ ``` html  
+  <div class="column">
+        <div class="col-5-1">
+          <p class="col-num">1/5</p>
+        </div>
+        <div class="col-5-1">
+          <p class="col-num">1/5</p>
+        </div>
+        <div class="col-5-1">
+          <p class="col-num">1/5</p>
+        </div>
+        <div class="col-5-1">
+          <p class="col-num">1/5</p>
+        </div>
+        <div class="col-5-1">
+          <p class="col-num">1/5</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="col-5-1">
+          <p class="col-num">1/5</p>
+        </div>
+        <div class="col-5-4">
+          <p class="col-num">4/5</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="col-5-2">
+          <p class="col-num">2/5</p>
+        </div>
+        <div class="col-5-3">
+          <p class="col-num">3/5</p>
+        </div>
+      </div>
+ ```
+ 
 
-欢迎使用 **{小书匠}(xiaoshujiang)编辑器**，您可以通过==设置==里的修改模板来改变新建文章的内容。
