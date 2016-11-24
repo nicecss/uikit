@@ -1,5 +1,5 @@
 ---
-title: 2016-11-24未命名文件 
+title: tips组件 
 tags: 新建,模板,小书匠
 grammar_cjkRuby: true
 ---
