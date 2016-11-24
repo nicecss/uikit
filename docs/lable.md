@@ -1,6 +1,6 @@
 ---
-title: 2016-11-24未命名文件 
-tags: 新建,模板,小书匠
+title: lable组件
+tags: lable标签
 grammar_cjkRuby: true
 ---
 
