@@ -2,9 +2,9 @@
 title: progress组件
 tags: progress标签
 
-#Progress
+# Progress
 
-###Progress
+### Progress
 
 > ``` html 
 >  <h2 class="demo-h2">progress</h2>
@@ -18,7 +18,7 @@ tags: progress标签
 >       </div> 
 >      </article> ```
  
-###Progress Style
+### Progress Style
 
 
 > ``` html    <h2 class="demo-h2">progress Style</h2>
@@ -28,7 +28,7 @@ tags: progress标签
 >       </div>
 >     </article> ```
 
-###progress Size
+### progress Size
 
 > ``` html   <article>
 >       <div class="progress progress-small">
