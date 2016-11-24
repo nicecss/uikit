@@ -2,11 +2,11 @@
 title: page组件 
 tags: page
 
-#page
+# page
 
 描述
 
-###page 
+### page 
 
 > ``` html   <h2 class="demo-h2">page</h2>
 >     <article>
@@ -59,7 +59,6 @@ tags: page
 ###page align-right
 
 ``` html 
-
      <article>
       <div class="pages">
         <div class="pages align-right">
