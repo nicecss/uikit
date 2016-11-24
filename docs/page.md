@@ -32,7 +32,7 @@ tags: page
 >       </div>
 >     </article>  ```
 
-###page right
+###page page-right
 
 > ``` html <div class="page page-right">
 >         <a class="disabled">上一页</a>
@@ -56,7 +56,7 @@ tags: page
 >       </div>
 >     </article> ```
 
-###page right
+###page align-right
 
 ``` html 
 
