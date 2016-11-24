@@ -1,8 +1,21 @@
 ---
-title: 2016-11-24未命名文件 
-tags: 新建,模板,小书匠
-grammar_cjkRuby: true
----
+title: Textarea
+tags: Textarea标签
 
+#Textarea
 
-欢迎使用 **{小书匠}(xiaoshujiang)编辑器**，您可以通过==设置==里的修改模板来改变新建文章的内容。
+描述
+
+###textarea
+``` html
+ <section>
+    <h2 class="demo-h2">Textarea</h2>
+    <article>
+      <textarea></textarea>
+    </article>
+    <article>
+      <textarea class="textarea-green"></textarea>
+      <textarea disabled>禁用</textarea>
+    </article>
+  </section>
+  ```
