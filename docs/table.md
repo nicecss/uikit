@@ -1,8 +1,136 @@
----
-title: 2016-11-24未命名文件 
-tags: 新建,模板,小书匠
-grammar_cjkRuby: true
----
 
+---
+title:table
+tags: table 组件
 
-欢迎使用 **{小书匠}(xiaoshujiang)编辑器**，您可以通过==设置==里的修改模板来改变新建文章的内容。
+###table
+ ``` html  
+  <table class="table">
+        <thead>
+          <tr>
+            <th>课程名称</th>
+            <th width="100">老师</th>
+            <th width="100">结算价(元)</th>
+            <th width="100">佣金(元)</th>
+            <th width="110">状态</th>
+            <th width="160">操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a>国际转基因有限公司开设的课程</a></td>
+            <td>陈佳佳</td>
+            <td>2,000</td>
+            <td>2,100</td>
+            <td>已审核</td>
+            <td>
+              <a>编辑</a>
+              <a>复制</a>
+              <a>删除</a>
+            </td>
+          </tr>
+          <tr>
+            <td><a>国际转基因有限公司开设的课程</a></td>
+            <td>陈佳佳</td>
+            <td>2,000</td>
+            <td>2,100</td>
+            <td>已审核</td>
+            <td>
+              <a>编辑</a>
+              <a>复制</a>
+              <a>删除</a>
+            </td>
+          </tr>
+          <tr>
+            <td><a>国际转基因有限公司开设的课程</a></td>
+            <td>陈佳佳</td>
+            <td>2,000</td>
+            <td>2,100</td>
+            <td>已审核</td>
+            <td>
+              <a class="button button-smaller button-blue">编辑</a>
+              <a class="button button-smaller button-green">复制</a>
+              <a class="button button-smaller button-orange">删除</a>
+            </td>
+          </tr>
+          <tr>
+            <td><a>国际转基因有限公司开设的课程</a></td>
+            <td>陈佳佳</td>
+            <td>2,000</td>
+            <td>2,100</td>
+            <td>已审核</td>
+            <td>
+              <a class="button button-smaller button-blue">编辑</a>
+              <a class="button button-smaller button-green">复制</a>
+              <a class="button button-smaller button-orange">删除</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+       ```
+###table style
+    <h2 class="demo-h2">Table Style</h2>
+    <article>
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <th>课程名称</th>
+            <th width="100">老师</th>
+            <th width="100">结算价(元)</th>
+            <th width="100">佣金(元)</th>
+            <th width="110">状态</th>
+            <th width="160">操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a>国际转基因有限公司开设的课程</a></td>
+            <td>陈佳佳</td>
+            <td>2,000</td>
+            <td>2,100</td>
+            <td>已审核</td>
+            <td>
+              <a>编辑</a>
+              <a>复制</a>
+              <a>删除</a>
+            </td>
+          </tr>
+          <tr>
+            <td><a>国际转基因有限公司开设的课程</a></td>
+            <td>陈佳佳</td>
+            <td>2,000</td>
+            <td>2,100</td>
+            <td>已审核</td>
+            <td>
+              <a>编辑</a>
+              <a>复制</a>
+              <a>删除</a>
+            </td>
+          </tr>
+          <tr>
+            <td><a>国际转基因有限公司开设的课程</a></td>
+            <td>陈佳佳</td>
+            <td>2,000</td>
+            <td>2,100</td>
+            <td>已审核</td>
+            <td>
+              <a class="button button-smaller button-blue">编辑</a>
+              <a class="button button-smaller button-green">复制</a>
+              <a class="button button-smaller button-orange">删除</a>
+            </td>
+          </tr>
+          <tr>
+            <td><a>国际转基因有限公司开设的课程</a></td>
+            <td>陈佳佳</td>
+            <td>2,000</td>
+            <td>2,100</td>
+            <td>已审核</td>
+            <td>
+              <a class="button button-smaller button-blue">编辑</a>
+              <a class="button button-smaller button-green">复制</a>
+              <a class="button button-smaller button-orange">删除</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
