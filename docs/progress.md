@@ -1,8 +1,38 @@
 ---
-title: 2016-11-24未命名文件 
-tags: 新建,模板,小书匠
-grammar_cjkRuby: true
----
+title: progress组件
+tags: progress标签
+
+#Progress
+
+###Progress
+
+> ``` html 
+>  <h2 class="demo-h2">progress</h2>
+>     <article>
+>       <div class="progress">
+>         <div class="progress-bar" style="width:39%">39%</div>
+>       </div>
+>       <br>
+>       <div class="progress green">
+>         <div class="progress-bar" style="width:89%">89%</div>
+>       </div> 
+>      </article> ```
+ 
+###Progress Style
 
 
-欢迎使用 **{小书匠}(xiaoshujiang)编辑器**，您可以通过==设置==里的修改模板来改变新建文章的内容。
+> ``` html    <h2 class="demo-h2">progress Style</h2>
+>     <article>
+>       <div class="progress radius">
+>         <div class="progress-bar" style="width:39%">39%</div>
+>       </div>
+>     </article> ```
+
+###progress Size
+
+> ``` html   <article>
+>       <div class="progress progress-small">
+>         <div class="progress-bar" style="width:39%">39%</div>
+>       </div>
+>     </article> ```
+
