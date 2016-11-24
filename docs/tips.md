@@ -2,9 +2,9 @@
 title: tips组件 
 tags: tips标签
 
-#tips
+#Tips
 
-###tips
+###Tips
 
  ``` html  
  <h2 class="demo-h2">tip</h2>
@@ -35,7 +35,7 @@ tags: tips标签
       </tip>
     </article>
   ```
-###tips
+###Tip Size
 
  ``` html  
  <h2 class="demo-h2">Tip Size</h2>
