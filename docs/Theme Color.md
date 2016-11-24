@@ -2,11 +2,11 @@
 title: Theme Color
 tags: 新Theme Color标签
 ---
-#Theme Color
+# Theme Color
 
 描述
 
-###Theme Color
+### Theme Color
 
 ``` html
  <section class="demo-color">
