@@ -8,8 +8,8 @@ tags: form标签
 
 ###form
 ``` html
-  <h2 class="demo-h2">Form</h2>
-    <article>
+ 
+  
       <form class="form" action="javascript:;">
         <fieldset>
           <label class="long">公司名称：</label>
@@ -38,5 +38,5 @@ tags: form标签
           <input type="reset" value="重置" class="button grey large">
         </fieldset>
       </form>
-    </article>
+   
     ```
