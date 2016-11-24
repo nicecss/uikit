@@ -1,8 +1,37 @@
 ---
-title: 2016-11-24未命名文件 
-tags: 新建,模板,小书匠
-grammar_cjkRuby: true
----
+title: popup
+tags: popup标签
 
+#popup
 
-欢迎使用 **{小书匠}(xiaoshujiang)编辑器**，您可以通过==设置==里的修改模板来改变新建文章的内容。
+描述
+
+###popup
+
+``` html 
+  <h2 class="demo-h2">popup</h2>
+    <div class="column">
+      <article class="col-2-1">
+        <div class="notice popup margin-right-10">
+          <!-- <i class="icon close"></i> -->
+          <h1>恭喜你</h1>
+          <p>你获得了一个小面包,请好好享用。</p>
+          <div class="margin-top-20 align-right">
+            <a class="button button-disabled button-small">不要</a>
+            <a class="button button-orange button-small">真酷</a>
+          </div>
+        </div>
+      </article>
+      <article class="col-2-1">
+        <div class="notice popup green margin-left-10">
+          <!-- <i class="icon close"></i> -->
+          <h1>恭喜你</h1>
+          <p>你获得了一个小面包,请好好享用。</p>
+          <div class="margin-top-20 align-right">
+            <a class="button disabled">不要</a>
+            <a class="button ">真酷</a>
+          </div>
+        </div>
+      </article>
+    </div>
+```
