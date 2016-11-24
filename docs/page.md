@@ -1,8 +1,88 @@
 ---
-title: 2016-11-24未命名文件 
-tags: 新建,模板,小书匠
-grammar_cjkRuby: true
----
+title: page组件 
+tags: page
 
+#page
 
-欢迎使用 **{小书匠}(xiaoshujiang)编辑器**，您可以通过==设置==里的修改模板来改变新建文章的内容。
+描述
+
+###page 
+
+> ``` html   <h2 class="demo-h2">page</h2>
+>     <article>
+>       <div class="page">
+>         <a class="disabled">上一页</a>
+>         <a class="now">1</a>
+>         <a href="#">2</a>
+>         <a>3</a>
+>         <a>4</a>
+>         <a>5</a>
+>         <a>6</a>
+>         <a>7</a>
+>         <a>8</a>
+>         <a>9</a>
+>         <a>10</a>
+>         <a>下一页</a>
+>       </div>
+>     </article>
+>     <article>
+>       <div class="page">
+>         <a>上一页</a>
+>         <a>下一页</a>
+>       </div>
+>     </article>  ```
+
+###page right
+
+> ``` html <div class="page page-right">
+>         <a class="disabled">上一页</a>
+>         <a class="now">1</a>
+>         <a href="#">2</a>
+>         <a>3</a>
+>         <a>4</a>
+>         <a>5</a>
+>         <a>6</a>
+>         <a>7</a>
+>         <a>8</a>
+>         <a>9</a>
+>         <a>10</a>
+>         <a>下一页</a>
+>       </div>
+>     </article>
+>     <article>
+>       <div class="page page-right">
+>         <a>上一页</a>
+>         <a>下一页</a>
+>       </div>
+>     </article> ```
+
+###page right
+
+``` html 
+
+     <article>
+      <div class="pages">
+        <div class="pages align-right">
+          <div class="page page-right">
+            <a class="page-prev"><i></i></a>
+            <a class="now">1</a>
+            <a>2</a>
+            <a>3</a>
+            <a>4</a>
+            <a>5</a>
+            <a>6</a>
+            <a>7</a>
+            <a>8</a>
+            <a>9</a>
+            <a>10</a>
+            <a class="page-next"><i></i></a>
+          </div>
+          <div class="page page-right margin-left-30">
+            <a class="page-prev"><i></i></a>
+            <a>下一页<i class="icon icon-next margin-left-15"></i></a>
+          </div>
+        </div>
+      </div>
+    </article>  
+ 
+ ```
