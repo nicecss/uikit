@@ -1,8 +1,6 @@
 ---
 title: notice组件 <br>
 tags: notice标签
-grammar_cjkRuby: true
-
 
 #notice
 
