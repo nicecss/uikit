@@ -1,5 +1,5 @@
 ---
-title: notice组件 <br>
+title: notice
 tags: notice标签
 
 #notice
