@@ -8,8 +8,6 @@ tags: form标签
 
 ###form
 ``` html
- 
-  
       <form class="form" action="javascript:;">
         <fieldset>
           <label class="long">公司名称：</label>
