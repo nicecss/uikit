@@ -1,11 +1,10 @@
-#input
-  title: 输入框组件
-  tags: 文本，输入框
-  
-###描述
 
- 通过在文本输入框 ``` html  <input> ```前面、后面或是两边加上文字或按钮，
-可以实现对表单控件的扩展。
+ title: 输入框组件
+ tags: 文本，输入框
+  
+#input
+  
+描述
 
 ### input color
  ``` html  
