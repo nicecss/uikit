@@ -1,12 +1,11 @@
----下拉菜单
 title: select组件
 tags: select
 
-#select
+# select
 
-###select size
+### select size
  ``` html  
-    <article>
+ 
       <label class="select select-larger">
         <select name="demo">
           <option>1993年</option>
@@ -32,7 +31,7 @@ tags: select
         </select>
         <i></i>
       </label>
-    </article>
+
  ```
 
 
