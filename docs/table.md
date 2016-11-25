@@ -66,7 +66,8 @@ tags: table 标签
           </tr>
         </tbody>
       </table>
-    ```
+      
+  ```
 ### table style
 
   ``` html  
