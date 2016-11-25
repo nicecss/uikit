@@ -27,8 +27,7 @@ tags: tab组件
   ``` 
 
 ### 单个tab标签
-``` html  
-       
+``` html         
   <div class="tab">
     <ul class="tab-header">
       <li><a>公司1</a></li>
@@ -41,13 +40,5 @@ tags: tab组件
  </div>
 ```        
           
-          
-          
-          
-          
-          
-        
-      
-    
-     ```
+
 
