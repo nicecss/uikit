@@ -2,12 +2,11 @@
 title: lable组件
 tags: lable标签
 
-#Lable
+# Lable
 
-###Lable
+### lable
 ``` html
-    <h2 class="demo-h2">Label</h2>
-    <article class="label-group">
+     <article class="label-group">
       <span class="label">theme</span>
       <span class="label label-blue">blue</span>
       <span class="label label-green">green</span>
@@ -16,9 +15,8 @@ tags: lable标签
     </article>
 ```
 
-###Label Style
+### label Style
 ``` html
-  <h2 class="demo-h2">Label Style</h2>
      <article class="label-group">
       <span class="label radius">theme</span>
       <span class="label green radius">green</span>
