@@ -8,7 +8,6 @@ tags: progress标签
 ### Progress
 
  ``` html 
- <h2 class="demo-h2">progress</h2>
    <article>
    <div class="progress">
  <div class="progress-bar" style="width:39%">39%</div>
@@ -22,7 +21,6 @@ tags: progress标签
 ### Progress Style
 
  ``` html
- <h2 class="demo-h2">progress Style</h2>
   <article>
   <div class="progress radius">
   <div class="progress-bar" style="width:39%">39%</div>
