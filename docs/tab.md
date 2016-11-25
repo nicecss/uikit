@@ -2,7 +2,7 @@
 title: tab标签
 tags: tab组件
 ---
-# tab
+
 ### 多个tab标签
  ``` html   
  <div class="tab">
