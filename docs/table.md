@@ -1,9 +1,7 @@
-
----
 title:table
 tags: table 组件
 
-###table
+### table
  ``` html  
   <table class="table">
         <thead>
@@ -68,9 +66,8 @@ tags: table 组件
         </tbody>
       </table>
        ```
-###table style
-    <h2 class="demo-h2">Table Style</h2>
-    <article>
+### table style
+  ``` html  
       <table class="table table-dark">
         <thead>
           <tr>
@@ -133,4 +130,4 @@ tags: table 组件
           </tr>
         </tbody>
       </table>
-      
+    ```  
