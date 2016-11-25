@@ -1,7 +1,6 @@
+title: 输入框组件
+tags: 文本，输入框
 
- title: 输入框组件
- tags: 文本，输入框
-  
 #input
   
 描述
@@ -23,7 +22,6 @@
 
 ### Input Size
  ``` html  
-  
     <article>
       <input type="text" class="input input-larger" placeholder="请输入用户名">
       <br>
@@ -36,7 +34,6 @@
       <br>
       <input type="text" class="smaller" placeholder="请输入用户名">
     </article>
-
  ```   
       
       
