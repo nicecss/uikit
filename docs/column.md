@@ -8,11 +8,11 @@ tags: column组件
 ``` html  
 <div class="column">
     <div class="col-2-1">
-     <p class="col-num">1/2</p>
+    <p class="col-num">1/2</p>
     </div>
     <div class="col-2-1">
-     <p class="col-num">1/2</p>
-     </div>
+    <p class="col-num">1/2</p>
+    </div>
 </div>
 ```
 ## column3
@@ -79,18 +79,18 @@ tags: column组件
 </div>
 <div class="column">
     <div class="col-5-1">
-      <p class="col-num">1/5</p>
+     <p class="col-num">1/5</p>
     </div>
     <div class="col-5-4">
-       <p class="col-num">4/5</p>
+     <p class="col-num">4/5</p>
     </div> 
 </div>
 <div class="column">
     <div class="col-5-2">
-      <p class="col-num">2/5</p>
+    <p class="col-num">2/5</p>
     </div>
     <div class="col-5-3">
-       <p class="col-num">3/5</p>
+    <p class="col-num">3/5</p>
     </div>
 </div>
 ```
