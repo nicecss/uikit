@@ -3,7 +3,7 @@ title:table
 tags: table 组件
 ---
 
-##table
+## table
 
 ``` html  
 
@@ -62,7 +62,7 @@ tags: table 组件
 </table>
 
 ```
-##table style
+## table style
 
 ``` html   
 <table class="table table-dark">
