@@ -27,32 +27,19 @@ tags: tab组件
 ## 单个tab标签
 
 ``` html   
-
- 
-  公司1
-  公司2
-  非常长的标签名称
- 
-
+<div class="tab">
+ <ul class="tab-header">
+   <li><a>公司1</a></li>
+ </ul>
+<div class="now tab-content">
    你好1
-   
-   
+   <br>
+   <br>
+ </div>
+</div>
+  
+``` 
 
-你好2
-  
-         
-
-你好3
-  
-  
-  
- ``` 
- ``` 
  
-## 单个tab标签
-
-``` html    
-    
-     
-```                     
+              
           
