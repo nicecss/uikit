@@ -36,7 +36,7 @@ tags: column组件
 ``` html  
 <div class="column">
    <div class="col-4-1">
-    <p class="col-num">1/4</p>
+   <p class="col-num">1/4</p>
    </div>
    <div class="col-4-1">
     <p class="col-num">1/4</p>
@@ -62,7 +62,7 @@ tags: column组件
 ``` html  
 <div class="column">
     <div class="col-5-1">
-     <p class="col-num">1/5</p>
+    <p class="col-num">1/5</p>
     </div>
     <div class="col-5-1">
      <p class="col-num">1/5</p>
@@ -71,10 +71,10 @@ tags: column组件
      <p class="col-num">1/5</p>
     </div>
     <div class="col-5-1">
-      <p class="col-num">1/5</p>
+     <p class="col-num">1/5</p>
      </div>
      <div class="col-5-1">
-       <p class="col-num">1/5</p>
+      <p class="col-num">1/5</p>
      </div>
 </div>
 <div class="column">
