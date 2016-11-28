@@ -1,4 +1,25 @@
 ---
 title: laydate
 tags: 日期组件
-欢迎使用 书匠}(xiaoshujiang)编辑器**，您可以通过==设置==里的修改模板来改变新建文章的内容。
+---
+
+## 外部js调用
+
+```html
+<input id="hello" class="laydate-icon">
+<script>
+laydate({
+  elem: '#hello', //目标元素。由于laydate.js封装了一个轻量级的选择器引擎，因此elem还允许你传入class、tag但必须按照这种方式 '#id .class'
+  event: 'focus' //响应事件。如果没有传入event，则按照默认的click
+});
+</script>
+
+```
+
+## 图标触发日期
+
+```html
+<input id="hello1">
+<span class="laydate-icon" onclick="laydate({elem: '#hello1'});"></span>
+```
+
