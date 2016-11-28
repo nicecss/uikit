@@ -6,7 +6,6 @@ tags: page
 ## page 
 
 ``` html  
- 
 <div class="page">
   <a class="disabled">上一页</a>
   <a class="now">1</a>
