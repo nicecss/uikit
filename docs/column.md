@@ -31,26 +31,20 @@ tags: column组件
 
 ``` html  
 <div class="column">
-   <div class="col-4-1">
-   <p class="col-num">1/4</p>
-   </div>
-   <div class="col-4-1">
-    <p class="col-num">1/4</p>
-   </div>
   <div class="col-4-1">
-    <p class="col-num">1/4</p>
-  </div>
+    <p class="col-num">1/4</p></div>
   <div class="col-4-1">
-   <p class="col-num">1/4</p>
-  </div>
+    <p class="col-num">1/4</p></div>
+  <div class="col-4-1">
+    <p class="col-num">1/4</p></div>
+  <div class="col-4-1">
+    <p class="col-num">1/4</p></div>
 </div>
 <div class="column">
   <div class="col-4-1">
-   <p class="col-num">1/4</p>
-   </div>
-   <div class="col-4-3">
-    <p class="col-num">3/4</p>
-   </div>
+    <p class="col-num">1/4</p></div>
+  <div class="col-4-3">
+    <p class="col-num">3/4</p></div>
 </div>
 ```
 ## column5
