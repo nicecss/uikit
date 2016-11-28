@@ -19,17 +19,13 @@ tags: column组件
 
 ``` html  
 <div class="column">
-    <div class="col-3-1">
-    <p class="col-num">1/3</p>
-    </div>
-    <div class="col-3-1">
-    <p class="col-num">1/3</p>
-    </div>
-    <div class="col-3-1">
-    <p class="col-num">1/3</p>
-    </div>
+  <div class="col-3-1">
+    <p class="col-num">1/3</p></div>
+  <div class="col-3-1">
+    <p class="col-num">1/3</p></div>
+  <div class="col-3-1">
+    <p class="col-num">1/3</p></div>
 </div>
-
 ```
 ## column4
 
