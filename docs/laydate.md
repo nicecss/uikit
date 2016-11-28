@@ -6,7 +6,6 @@ tags: 日期组件
 ## 外部js调用
 
 ```html
-
 <input id="hello" class="laydate-icon">
 <script>
 laydate({
