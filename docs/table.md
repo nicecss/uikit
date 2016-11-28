@@ -72,6 +72,7 @@ tags: table 组件
     </tr>
   </tbody>
 </table>
+
 ```
 ## table style
 
