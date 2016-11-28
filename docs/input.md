@@ -1,10 +1,7 @@
 ---
 title: 输入框组件
 tags: 文本，输入框
----
-#input
-  
-描述
+--- 
 
 ## input color
 
