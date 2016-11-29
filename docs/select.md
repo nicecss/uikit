@@ -1,5 +1,5 @@
 title: select组件
-tags: select
+tags: select,uikit
 
 # select
 
