@@ -1,6 +1,6 @@
 ---
 title: idcard
-tags: idcard.uikit
+tags: idcard,uikit
 ---
 
 ##idcard
