@@ -1,6 +1,6 @@
 ---
 title: Checkbox & Radio
-tags: Checkbox & Radio
+tags: Checkbox & Radio,uikit
 ---
 
 ## Checkbox & Radio
