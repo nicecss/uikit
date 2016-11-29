@@ -1,6 +1,6 @@
 ---
-title: page组件 
-tags: page
+title: page
+tags: page,uikit
 ---
 
 ## page 
