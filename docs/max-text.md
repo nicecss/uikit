@@ -6,6 +6,7 @@ tags: max-text
 ## max-text
 
 ```html
+
 <textarea  max-text="{200}以内"></textarea>
 
 <input type="text" max-text="{50}以内">
