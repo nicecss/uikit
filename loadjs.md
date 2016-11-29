@@ -1,6 +1,6 @@
 ---
 title: loadjs
-tags: laodjs 
+tags: laodjs ,uikit
 ---
 
 ## loadjs
