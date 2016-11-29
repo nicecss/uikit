@@ -1,6 +1,6 @@
 ---
 title: laydate
-tags: 日期组件
+tags: laydate,uikit
 ---
 
 ## 外部js调用
