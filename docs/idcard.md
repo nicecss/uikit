@@ -1,6 +1,6 @@
 ---
 title: idcard
-tags: 表单验证
+tags: idcard.uikit
 ---
 
 ##idcard
@@ -112,3 +112,6 @@ tags: 表单验证
   <input type="hidden" name="user_type" value="2">
  </form>
 ```
+
+
+
