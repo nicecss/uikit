@@ -1,4 +1,4 @@
-title: select组件
+title: select
 tags: select,uikit
 
 # select
