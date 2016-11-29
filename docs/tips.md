@@ -1,6 +1,6 @@
 ---
-title: tips组件 
-tags: tips标签
+title: tips
+tags: tips,uikit
 ---
 
 ## Tips
