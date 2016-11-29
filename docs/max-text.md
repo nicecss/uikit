@@ -10,7 +10,7 @@ tags: max-text
 <input type="text" max-text="{50}以内">
 ```
 属性         描述
-autoarea    高度自适应
+maxtext     字数限制
 
 ```
 
