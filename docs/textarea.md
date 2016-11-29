@@ -1,6 +1,6 @@
 ---
 title: Textarea
-tags: Textarea标签
+tags: Textarea,uikit
 ---
 
 ## textarea
