@@ -1,15 +1,22 @@
 ---
 title: autoarea
-tags: autoarea标签
+tags: autoarea,uikit
 ---
 
 ## autoarea
 
 ```html
-<textarea autoarea></textarea>
+
+<textarea autoarea> </textarea>
+
 ```
-属性         描述
-autoarea    高度自适应
+
+| 属性     | 描述       |    
+| -------- | ---------- | 
+| autoarea | 高度自适应 |     
+
+
+
 
 
 
