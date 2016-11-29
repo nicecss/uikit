@@ -1,6 +1,6 @@
 ---
-title: 输入框组件
-tags: 文本，输入框
+title: input
+tags: input，uikit
 --- 
 
 ## input color
