@@ -1,6 +1,6 @@
 ---
 title: max-text
-tags: max-text
+tags: max-text,uikit
 ---
 
 ## max-text
