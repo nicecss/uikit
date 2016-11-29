@@ -1,6 +1,6 @@
 ---
 title:table
-tags: table 组件
+tags: table ,uikit
 ---
 
 ## table
