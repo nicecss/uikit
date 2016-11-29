@@ -1,6 +1,6 @@
 ---
 title: column
-tags: column组件
+tags: column,uikit
 ---
 
 ## column2
