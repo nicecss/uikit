@@ -1,9 +1,8 @@
+---
 title: select
-tags: select,uikit
+tags: select,uikit---
 
 # select
-
-### select size
 
 ``` html 
  
