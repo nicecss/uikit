@@ -66,8 +66,7 @@
 
   var renderHtml = function(url, data) {
     $.ajax({
-      url: url,
-      type:'POST'
+      url: url
     }).done(function(res){
       var render = template.compile(res);
       $('.common-main').html(render(res));
