@@ -5,9 +5,9 @@ tags: select,uikit
 
 ### select size
 
-``` html  
+``` html 
  
-     <label class="select select-larger">
+<label class="select select-larger">
   <select name="demo">
     <option>1993年</option>
     <option>1994年</option>
