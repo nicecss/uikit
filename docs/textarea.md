@@ -3,15 +3,15 @@ title: Textarea
 tags: Textarea,uikit
 ---
 
-## textarea
+## Textarea
+
 ``` html
-<section>
-  <h2 class="demo-h2">Textarea</h2>
-  <article>
-    <textarea></textarea>
-  </article>
-  <article>
-    <textarea class="textarea-green"></textarea>
-    <textarea disabled>禁用</textarea></article>
-</section>
+<textarea class="textarea" placeholder="输入一些文字..."></textarea>
+<textarea class="textarea" disabled>禁用</textarea>
+```
+
+## Autosize
+
+```html
+<textarea class="textarea" autoarea></textarea>
 ```

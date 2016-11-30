@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/ui.min.css">
+  <link rel="stylesheet" href="css/mono-blue.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+</head>
+
+<body>
+  <!-- 模板 header -->
+  <script id="header" type="text/html">
+    <div class="common-header">
+      <div class="page-center">
+        <h1 class="doc-logo">UIKit</h1>
+      </div>
+    </div>
+  </script>
+  <!-- 模板 nav -->
+  <script id="nav" type="text/html">
+    <div class="common-nav">
+      <ul class="u-menu">
+        {{each nav as val key}}
+          <li>
+            <strong>{{key}}</strong>
+            <ul>
+              {{each val as v i}}
+                <li><a onclick="renderHtml('html/{{v}}.html')" {{if now==i&&key=='base'}}class="now" {{/if}}>{{v}}</a></li>
+              {{/each}}
+            </ul>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  </script>
+  <!-- 模板 main -->
+  <script id="main" type="text/html">
+    <div class="common-main" id="docs"></div>
+  </script>
+  <!-- 模板 layout -->
+  <script id="layout" type="text/html">
+    {{include 'header'}}
+    <div class="common-content">
+      <div class="page-center relative">
+        {{include 'nav'}} {{include 'main'}}
+      </div>
+    </div>
+  </script>
+  <script>
+  var pageData = {
+    nav: {
+      base: ['button', 'border'],
+      layout: ['margin', 'padding', 'column'],
+      form: ['input', 'textarea', 'select', 'radio', 'checkbox'],
+      js: ['birthday']
+    },
+    now: 0
+  };
+  var tpl = template('layout', pageData);
+  document.body.innerHTML = tpl;
+
+  var renderHtml = function(url, data) {
+    $.ajax({
+      url: url,
+      type:'POST'
+    }).done(function(res){
+      var render = template.compile(res);
+      $('.common-main').html(render(res));
+      commonNavOver()
+    }).fail(function(){
+      nalert('请求失败')
+    })
+  };
+
+  $('.u-menu').on('click', 'a', function() {
+    $('.u-menu a.now').removeClass('now');
+    $(this).addClass('now');
+  });
+
+  renderHtml('html/' + pageData.nav.base[pageData.now] + '.html')
+  </script>
+</body>
+
+</html>

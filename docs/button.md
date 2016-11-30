@@ -1,8 +1,3 @@
----
-title: Button
-tags: button,uikit
----
-
 ## Button Color
 
 ```html

@@ -1,5 +1,5 @@
 ---
-title:table
+title: table
 tags: table,uikit
 ---
 

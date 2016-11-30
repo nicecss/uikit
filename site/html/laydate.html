@@ -1,0 +1,134 @@
+<h2>外部js调用</h2>
+<div class="docs-html"><input id="hello" class="laydate-icon">
+<script>
+laydate({
+  elem: '#hello', //目标元素。由于laydate.js封装了一个轻量级的选择器引擎，因此elem还允许你传入class、tag但必须按照这种方式 '#id .class'
+  event: 'focus' //响应事件。如果没有传入event，则按照默认的click
+});
+</script></div>
+<pre class="docs-code language-html"><code>&lt;input id=<span class="hljs-string">"hello"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"laydate-icon"</span>&gt;
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+laydate({
+  elem: <span class="hljs-string">'#hello'</span>, <span class="hljs-comment">//目标元素。由于laydate.js封装了一个轻量级的选择器引擎，因此elem还允许你传入class、tag但必须按照这种方式 '#id .class'</span>
+  event: <span class="hljs-string">'focus'</span> <span class="hljs-comment">//响应事件。如果没有传入event，则按照默认的click</span>
+});
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span></code></pre>
+
+<h2>图标触发日期</h2>
+<div class="docs-html">
+<input id="hello1">
+<span class="laydate-icon" onclick="laydate({elem: '#hello1'});"></span></div>
+<pre class="docs-code language-html"><code><span class="xml">
+<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"hello1"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"laydate-icon"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"laydate(</span></span></span><span class="hljs-template-variable">{elem: '#hello1'}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">);"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span></code></pre>
+
+<h2>自定义日期格式</h2>
+<div class="docs-html"><div id="test1" class="laydate-icon"></div>
+<script>
+laydate({
+  elem: '#test1',
+  format: 'YYYY/MM', // 分隔符可以任意定义，该例子表示只显示年月
+  festival: true, //显示节日
+  choose: function(datas){ //选择日期完毕的回调
+    alert('得到：'+datas);
+  }
+});
+</script></div>
+<pre class="docs-code language-html"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"test1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"laydate-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+laydate({
+  elem: <span class="hljs-string">'#test1'</span>,
+  format: <span class="hljs-string">'YYYY/MM'</span>, <span class="hljs-comment">// 分隔符可以任意定义，该例子表示只显示年月</span>
+  festival: <span class="hljs-literal">true</span>, <span class="hljs-comment">//显示节日</span>
+  choose: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(datas)</span></span>{ <span class="hljs-comment">//选择日期完毕的回调</span>
+    alert(<span class="hljs-string">'得到：'</span>+datas);
+  }
+});
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
+
+<h2>日期范围限定在昨天到明天</h2>
+<div class="docs-html"><div id="test1" class="laydate-icon"></div>
+<script>
+laydate({
+  elem: '#test1',
+  format: 'YYYY/MM', // 分隔符可以任意定义，该例子表示只显示年月
+  festival: true, //显示节日
+  choose: function(datas){ //选择日期完毕的回调
+    alert('得到：'+datas);
+  }
+});
+</script></div>
+<pre class="docs-code language-html"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"test1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"laydate-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+laydate({
+  elem: <span class="hljs-string">'#test1'</span>,
+  format: <span class="hljs-string">'YYYY/MM'</span>, <span class="hljs-comment">// 分隔符可以任意定义，该例子表示只显示年月</span>
+  festival: <span class="hljs-literal">true</span>, <span class="hljs-comment">//显示节日</span>
+  choose: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(datas)</span></span>{ <span class="hljs-comment">//选择日期完毕的回调</span>
+    alert(<span class="hljs-string">'得到：'</span>+datas);
+  }
+});
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
+
+<h2>日期范围限制</h2>
+<div class="docs-html">
+开始日：<li class="laydate-icon" id="start" style="width:200px; margin-right:10px;"></li>
+结束日：<li class="laydate-icon" id="end" style="width:200px;"></li>
+<script>
+var start = {
+  elem: '#start',
+  format: 'YYYY/MM/DD hh:mm:ss',
+  min: laydate.now(), //设定最小日期为当前日期
+  max: '2099-06-16 23:59:59', //最大日期
+  istime: true,
+  istoday: false,
+  choose: function(datas){
+     end.min = datas; //开始日选好后，重置结束日的最小日期
+     end.start = datas //将结束日的初始值设定为开始日
+  }
+};
+var end = {
+  elem: '#end',
+  format: 'YYYY/MM/DD hh:mm:ss',
+  min: laydate.now(),
+  max: '2099-06-16 23:59:59',
+  istime: true,
+  istoday: false,
+  choose: function(datas){
+    start.max = datas; //结束日选好后，重置开始日的最大日期
+  }
+};
+laydate(start);
+laydate(end);
+</script></div>
+<pre class="docs-code language-html"><code>
+开始日：&lt;li <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"laydate-icon"</span> id=<span class="hljs-string">"start"</span> style=<span class="hljs-string">"width:200px; margin-right:10px;"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+结束日：&lt;li <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"laydate-icon"</span> id=<span class="hljs-string">"end"</span> style=<span class="hljs-string">"width:200px;"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+&lt;script&gt;
+<span class="hljs-keyword">var</span> start = {
+  <span class="hljs-attr">elem</span>: <span class="hljs-string">'#start'</span>,
+  <span class="hljs-attr">format</span>: <span class="hljs-string">'YYYY/MM/DD hh:mm:ss'</span>,
+  <span class="hljs-attr">min</span>: laydate.now(), <span class="hljs-comment">//设定最小日期为当前日期</span>
+  max: <span class="hljs-string">'2099-06-16 23:59:59'</span>, <span class="hljs-comment">//最大日期</span>
+  istime: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">istoday</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-attr">choose</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">datas</span>)</span>{
+     end.min = datas; <span class="hljs-comment">//开始日选好后，重置结束日的最小日期</span>
+     end.start = datas <span class="hljs-comment">//将结束日的初始值设定为开始日</span>
+  }
+};
+<span class="hljs-keyword">var</span> end = {
+  <span class="hljs-attr">elem</span>: <span class="hljs-string">'#end'</span>,
+  <span class="hljs-attr">format</span>: <span class="hljs-string">'YYYY/MM/DD hh:mm:ss'</span>,
+  <span class="hljs-attr">min</span>: laydate.now(),
+  <span class="hljs-attr">max</span>: <span class="hljs-string">'2099-06-16 23:59:59'</span>,
+  <span class="hljs-attr">istime</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">istoday</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-attr">choose</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">datas</span>)</span>{
+    start.max = datas; <span class="hljs-comment">//结束日选好后，重置开始日的最大日期</span>
+  }
+};
+laydate(start);
+laydate(end);
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span></code></pre>
+

@@ -1,0 +1,212 @@
+<h2>idcard</h2>
+<div class="docs-html">  <form action="javascript:;" class="form" isvalid id="reg_form">
+  <input type="hidden" name="avatar" id="avatar">
+  <fieldset class="margin-bottom-20">
+    <label class="f-label text-large text">昵称：</label>
+    <input type="text" class="input input-larger" placeholder="" data-rule-required="true" data-msg-required="请输入昵称" name="username" data-rule-nickname="true"></fieldset>
+  <fieldset class="margin-bottom-20">
+    <label class="f-label text-large text">密码：</label>
+    <input type="password" class="input input-larger" placeholder="" name="password" data-rule-space="true" data-rule-minlength=6 data-rule-required="true" data-msg-required="请输入密码"></fieldset>
+  <fieldset class="margin-bottom-20">
+    <label class="f-label text-large text">确认密码：</label>
+    <input type="password" class="input input-larger" placeholder="" name="password2" equalTo="[name=password]" data-rule-required="true" data-msg-required="请再次输入密码"></fieldset>
+  <fieldset class="margin-bottom-20">
+    <label class="f-label text-large text">手机号码：</label>
+    <input type="text" class="input input-larger" placeholder="" name="mobile" data-rule-phone="true" data-rule-required="true" data-msg-required="请输入手机号码" id="mobile"></fieldset>
+  <fieldset class="yzm margin-bottom-20">
+    <label class="f-label text-large text">验证码：</label>
+    <input type="text" class="input input-larger" placeholder="" name="mobile_code" data-rule-required="true" data-msg-required="请输入验证码">
+    <a class="button button-large" id="yzmbtn" yzm-time="60">发送验证码</a>
+    <label for="mobile_code" class="label-error"></label>
+  </fieldset>
+  <fieldset class="margin-bottom-20">
+    <label class="f-label text-large text">电子邮箱：</label>
+    <input type="text" class="input input-larger" placeholder="" name="email" data-msg-required="请输入邮箱" data-rule-email='true' data-rule-required="true"></fieldset>
+  <fieldset class="text-large margin-bottom-20 reg-more">
+    <a none="#js-show" show="#js-loginmore,#js-none" id="js-show">高级选项</a>
+    <a none="#js-none,#js-loginmore" show="#js-show" class="none" id="js-none">收起选项</a></fieldset>
+  <div class="none" id="js-loginmore">
+    <fieldset class="margin-bottom-20">
+      <label class="f-label text-large text">姓名：</label>
+      <input type="text" class="input input-larger" placeholder="" data-rule-fullname="true" name="truename" data-msg-required="请输入姓名"></fieldset>
+    <fieldset class="margin-bottom-20">
+      <label class="f-label text-large text">性别：</label>
+      <label class="radio radio-larger margin-right-10">
+        <input type="radio" name="gender" value="1">
+        <i>
+        </i>
+        <span class="text-large">男</span></label>
+      <label class="radio radio-larger">
+        <input type="radio" name="gender" value="2">
+        <i>
+        </i>
+        <span class="text-large">女</span></label>
+    </fieldset>
+    <fieldset class="margin-bottom-20">
+      <label class="f-label text-large text">出生年月：</label>
+      <label class="select select-larger  margin-right-15">
+        <select name="birthyear" id="sel_year">
+          <option value="0">年</option></select>
+        <i class="icon icon-down"></i>
+      </label>
+      <label class="select select-larger select-icon">
+        <select name="birthmonth" id="sel_month" data-msg-required="请选择生日">
+          <option value="0">月</option></select>
+        <i class="icon icon-down"></i>
+      </label>
+    </fieldset>
+    <fieldset class="margin-bottom-20">
+      <label class="f-label text-large text">身份证号：</label>
+      <input type="text" class="input input-larger" placeholder="" name="IDcard" data-msg-required="请输入身份证号" data-rule-idcardsexdate="{sex:'gender',date:'birthyear birthmonth'}"></fieldset>
+    <fieldset class="margin-bottom-20">
+      <label class="f-label text-large text">头像上传：</label>
+      <div class="align-top inline">
+        <a id="cktool" modal=".modal-head" class="sprite sprite-cktool"></a>
+        <div class="u-imgout change-head none">
+          <a modal=".modal-head">
+            <img></a>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset class="margin-bottom-20">
+      <label class="f-label text-large text">通信地址：</label>
+      <input type="text" class="input input-larger" placeholder="" name="address" data-msg-required="请输入通信地址" data-rule-maxlength=50></fieldset>
+    <fieldset class="margin-bottom-20">
+      <label class="f-label text-large text">毕业院校：</label>
+      <input type="text" class="input input-larger" placeholder="" name="graduated_school" data-msg-required="请输入毕业院校" data-rule-maxlength=50></fieldset>
+    <fieldset class="margin-bottom-20">
+      <label class="f-label text-large text">专业：</label>
+      <input type="text" class="input input-larger" placeholder="" name="profession" data-msg-required="请输入专业" data-rule-maxlength=50></fieldset>
+    <fieldset class="margin-bottom-20">
+      <label class="f-label text-large text">学历：</label>
+      <input type="text" class="input input-larger" placeholder="" name="educational" data-msg-required="请输入学历" data-rule-maxlength=50></fieldset>
+    <fieldset class="margin-bottom-20">
+      <label class="f-label text-large text">学位：</label>
+      <input type="text" class="input input-larger" placeholder="" name="degree" data-msg-required="请输入学位" data-rule-maxlength=50></fieldset>
+    <fieldset class="margin-bottom-20">
+      <label class="f-label text-large text">单位：</label>
+      <input type="text" class="input input-larger" placeholder="" name="unit" data-msg-required="请输入单位" data-rule-maxlength=50></fieldset>
+    <fieldset class="margin-bottom-20">
+      <label class="f-label text-large text">学校机构：</label>
+      <input type="text" class="input input-larger" placeholder="" name="organization" data-msg-required="请输入学校机构" data-rule-maxlength=50></fieldset>
+    <fieldset class="margin-bottom-20">
+      <label class="f-label text-large text">研究领域：</label>
+      <input type="text" class="input input-larger" placeholder="" name="research" data-msg-required="请输入研究领域" data-rule-maxlength=50></fieldset>
+    <fieldset class="margin-bottom-20">
+      <label class="f-label text-large text">职务：</label>
+      <input type="text" class="input input-larger" placeholder="" name="position" data-msg-required="请输入职务" data-rule-maxlength=50></fieldset>
+    <fieldset class="margin-bottom-20">
+      <label class="f-label text-large text">职称：</label>
+      <input type="text" class="input input-larger" placeholder="" name="job_title" data-msg-required="请输入职称" data-rule-maxlength=50></fieldset>
+  </div>
+  <fieldset>
+    <label class="f-label"></label>
+    <a onclick1="do_submit()" onsuccess=do_submit class="button button-blue button-larger button-boxer" submit-button>注册</a></fieldset>
+  <input type="hidden" name="user_type" value="2">
+ </form></div>
+<pre class="docs-code language-html"><code>  &lt;form action=<span class="hljs-string">"javascript:;"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"form"</span> isvalid id=<span class="hljs-string">"reg_form"</span>&gt;
+  &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"hidden"</span> name=<span class="hljs-string">"avatar"</span> id=<span class="hljs-string">"avatar"</span>&gt;
+  &lt;fieldset <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"margin-bottom-20"</span>&gt;
+    &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"f-label text-large text"</span>&gt;昵称：&lt;/label&gt;
+    &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"input input-larger"</span> placeholder=<span class="hljs-string">""</span> data-rule-required=<span class="hljs-string">"true"</span> data-msg-required=<span class="hljs-string">"请输入昵称"</span> name=<span class="hljs-string">"username"</span> data-rule-nickname=<span class="hljs-string">"true"</span>&gt;&lt;/fieldset&gt;
+  &lt;fieldset <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"margin-bottom-20"</span>&gt;
+    &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"f-label text-large text"</span>&gt;密码：&lt;/label&gt;
+    &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"password"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"input input-larger"</span> placeholder=<span class="hljs-string">""</span> name=<span class="hljs-string">"password"</span> data-rule-space=<span class="hljs-string">"true"</span> data-rule-minlength=<span class="hljs-number">6</span> data-rule-required=<span class="hljs-string">"true"</span> data-msg-required=<span class="hljs-string">"请输入密码"</span>&gt;&lt;/fieldset&gt;
+  &lt;fieldset <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"margin-bottom-20"</span>&gt;
+    &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"f-label text-large text"</span>&gt;确认密码：&lt;/label&gt;
+    &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"password"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"input input-larger"</span> placeholder=<span class="hljs-string">""</span> name=<span class="hljs-string">"password2"</span> equalTo=<span class="hljs-string">"[name=password]"</span> data-rule-required=<span class="hljs-string">"true"</span> data-msg-required=<span class="hljs-string">"请再次输入密码"</span>&gt;&lt;/fieldset&gt;
+  &lt;fieldset <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"margin-bottom-20"</span>&gt;
+    &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"f-label text-large text"</span>&gt;手机号码：&lt;/label&gt;
+    &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"input input-larger"</span> placeholder=<span class="hljs-string">""</span> name=<span class="hljs-string">"mobile"</span> data-rule-phone=<span class="hljs-string">"true"</span> data-rule-required=<span class="hljs-string">"true"</span> data-msg-required=<span class="hljs-string">"请输入手机号码"</span> id=<span class="hljs-string">"mobile"</span>&gt;&lt;/fieldset&gt;
+  &lt;fieldset <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"yzm margin-bottom-20"</span>&gt;
+    &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"f-label text-large text"</span>&gt;验证码：&lt;/label&gt;
+    &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"input input-larger"</span> placeholder=<span class="hljs-string">""</span> name=<span class="hljs-string">"mobile_code"</span> data-rule-required=<span class="hljs-string">"true"</span> data-msg-required=<span class="hljs-string">"请输入验证码"</span>&gt;
+    &lt;a <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"button button-large"</span> id=<span class="hljs-string">"yzmbtn"</span> yzm-time=<span class="hljs-string">"60"</span>&gt;发送验证码&lt;/a&gt;
+    &lt;label <span class="hljs-keyword">for</span>=<span class="hljs-string">"mobile_code"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"label-error"</span>&gt;&lt;/label&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"margin-bottom-20"</span>&gt;
+    &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"f-label text-large text"</span>&gt;电子邮箱：&lt;/label&gt;
+    &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"input input-larger"</span> placeholder=<span class="hljs-string">""</span> name=<span class="hljs-string">"email"</span> data-msg-required=<span class="hljs-string">"请输入邮箱"</span> data-rule-email=<span class="hljs-symbol">'tru</span>e' data-rule-required=<span class="hljs-string">"true"</span>&gt;&lt;/fieldset&gt;
+  &lt;fieldset <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"text-large margin-bottom-20 reg-more"</span>&gt;
+    &lt;a none=<span class="hljs-string">"#js-show"</span> show=<span class="hljs-string">"#js-loginmore,#js-none"</span> id=<span class="hljs-string">"js-show"</span>&gt;高级选项&lt;/a&gt;
+    &lt;a none=<span class="hljs-string">"#js-none,#js-loginmore"</span> show=<span class="hljs-string">"#js-show"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"none"</span> id=<span class="hljs-string">"js-none"</span>&gt;收起选项&lt;/a&gt;&lt;/fieldset&gt;
+  &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"none"</span> id=<span class="hljs-string">"js-loginmore"</span>&gt;
+    &lt;fieldset <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"margin-bottom-20"</span>&gt;
+      &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"f-label text-large text"</span>&gt;姓名：&lt;/label&gt;
+      &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"input input-larger"</span> placeholder=<span class="hljs-string">""</span> data-rule-fullname=<span class="hljs-string">"true"</span> name=<span class="hljs-string">"truename"</span> data-msg-required=<span class="hljs-string">"请输入姓名"</span>&gt;&lt;/fieldset&gt;
+    &lt;fieldset <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"margin-bottom-20"</span>&gt;
+      &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"f-label text-large text"</span>&gt;性别：&lt;/label&gt;
+      &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"radio radio-larger margin-right-10"</span>&gt;
+        &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"gender"</span> value=<span class="hljs-string">"1"</span>&gt;
+        &lt;i&gt;
+        &lt;/i&gt;
+        &lt;span <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"text-large"</span>&gt;男&lt;/span&gt;&lt;/label&gt;
+      &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"radio radio-larger"</span>&gt;
+        &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"gender"</span> value=<span class="hljs-string">"2"</span>&gt;
+        &lt;i&gt;
+        &lt;/i&gt;
+        &lt;span <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"text-large"</span>&gt;女&lt;/span&gt;&lt;/label&gt;
+    &lt;/fieldset&gt;
+    &lt;fieldset <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"margin-bottom-20"</span>&gt;
+      &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"f-label text-large text"</span>&gt;出生年月：&lt;/label&gt;
+      &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"select select-larger  margin-right-15"</span>&gt;
+        &lt;select name=<span class="hljs-string">"birthyear"</span> id=<span class="hljs-string">"sel_year"</span>&gt;
+          &lt;option value=<span class="hljs-string">"0"</span>&gt;年&lt;/option&gt;&lt;/select&gt;
+        &lt;i <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"icon icon-down"</span>&gt;&lt;/i&gt;
+      &lt;/label&gt;
+      &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"select select-larger select-icon"</span>&gt;
+        &lt;select name=<span class="hljs-string">"birthmonth"</span> id=<span class="hljs-string">"sel_month"</span> data-msg-required=<span class="hljs-string">"请选择生日"</span>&gt;
+          &lt;option value=<span class="hljs-string">"0"</span>&gt;月&lt;/option&gt;&lt;/select&gt;
+        &lt;i <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"icon icon-down"</span>&gt;&lt;/i&gt;
+      &lt;/label&gt;
+    &lt;/fieldset&gt;
+    &lt;fieldset <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"margin-bottom-20"</span>&gt;
+      &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"f-label text-large text"</span>&gt;身份证号：&lt;/label&gt;
+      &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"input input-larger"</span> placeholder=<span class="hljs-string">""</span> name=<span class="hljs-string">"IDcard"</span> data-msg-required=<span class="hljs-string">"请输入身份证号"</span> data-rule-idcardsexdate=<span class="hljs-string">"{sex:'gender',date:'birthyear birthmonth'}"</span>&gt;&lt;/fieldset&gt;
+    &lt;fieldset <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"margin-bottom-20"</span>&gt;
+      &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"f-label text-large text"</span>&gt;头像上传：&lt;/label&gt;
+      &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"align-top inline"</span>&gt;
+        &lt;a id=<span class="hljs-string">"cktool"</span> modal=<span class="hljs-string">".modal-head"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"sprite sprite-cktool"</span>&gt;&lt;/a&gt;
+        &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"u-imgout change-head none"</span>&gt;
+          &lt;a modal=<span class="hljs-string">".modal-head"</span>&gt;
+            &lt;img&gt;&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/fieldset&gt;
+    &lt;fieldset <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"margin-bottom-20"</span>&gt;
+      &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"f-label text-large text"</span>&gt;通信地址：&lt;/label&gt;
+      &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"input input-larger"</span> placeholder=<span class="hljs-string">""</span> name=<span class="hljs-string">"address"</span> data-msg-required=<span class="hljs-string">"请输入通信地址"</span> data-rule-maxlength=<span class="hljs-number">50</span>&gt;&lt;/fieldset&gt;
+    &lt;fieldset <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"margin-bottom-20"</span>&gt;
+      &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"f-label text-large text"</span>&gt;毕业院校：&lt;/label&gt;
+      &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"input input-larger"</span> placeholder=<span class="hljs-string">""</span> name=<span class="hljs-string">"graduated_school"</span> data-msg-required=<span class="hljs-string">"请输入毕业院校"</span> data-rule-maxlength=<span class="hljs-number">50</span>&gt;&lt;/fieldset&gt;
+    &lt;fieldset <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"margin-bottom-20"</span>&gt;
+      &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"f-label text-large text"</span>&gt;专业：&lt;/label&gt;
+      &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"input input-larger"</span> placeholder=<span class="hljs-string">""</span> name=<span class="hljs-string">"profession"</span> data-msg-required=<span class="hljs-string">"请输入专业"</span> data-rule-maxlength=<span class="hljs-number">50</span>&gt;&lt;/fieldset&gt;
+    &lt;fieldset <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"margin-bottom-20"</span>&gt;
+      &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"f-label text-large text"</span>&gt;学历：&lt;/label&gt;
+      &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"input input-larger"</span> placeholder=<span class="hljs-string">""</span> name=<span class="hljs-string">"educational"</span> data-msg-required=<span class="hljs-string">"请输入学历"</span> data-rule-maxlength=<span class="hljs-number">50</span>&gt;&lt;/fieldset&gt;
+    &lt;fieldset <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"margin-bottom-20"</span>&gt;
+      &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"f-label text-large text"</span>&gt;学位：&lt;/label&gt;
+      &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"input input-larger"</span> placeholder=<span class="hljs-string">""</span> name=<span class="hljs-string">"degree"</span> data-msg-required=<span class="hljs-string">"请输入学位"</span> data-rule-maxlength=<span class="hljs-number">50</span>&gt;&lt;/fieldset&gt;
+    &lt;fieldset <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"margin-bottom-20"</span>&gt;
+      &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"f-label text-large text"</span>&gt;单位：&lt;/label&gt;
+      &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"input input-larger"</span> placeholder=<span class="hljs-string">""</span> name=<span class="hljs-string">"unit"</span> data-msg-required=<span class="hljs-string">"请输入单位"</span> data-rule-maxlength=<span class="hljs-number">50</span>&gt;&lt;/fieldset&gt;
+    &lt;fieldset <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"margin-bottom-20"</span>&gt;
+      &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"f-label text-large text"</span>&gt;学校机构：&lt;/label&gt;
+      &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"input input-larger"</span> placeholder=<span class="hljs-string">""</span> name=<span class="hljs-string">"organization"</span> data-msg-required=<span class="hljs-string">"请输入学校机构"</span> data-rule-maxlength=<span class="hljs-number">50</span>&gt;&lt;/fieldset&gt;
+    &lt;fieldset <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"margin-bottom-20"</span>&gt;
+      &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"f-label text-large text"</span>&gt;研究领域：&lt;/label&gt;
+      &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"input input-larger"</span> placeholder=<span class="hljs-string">""</span> name=<span class="hljs-string">"research"</span> data-msg-required=<span class="hljs-string">"请输入研究领域"</span> data-rule-maxlength=<span class="hljs-number">50</span>&gt;&lt;/fieldset&gt;
+    &lt;fieldset <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"margin-bottom-20"</span>&gt;
+      &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"f-label text-large text"</span>&gt;职务：&lt;/label&gt;
+      &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"input input-larger"</span> placeholder=<span class="hljs-string">""</span> name=<span class="hljs-string">"position"</span> data-msg-required=<span class="hljs-string">"请输入职务"</span> data-rule-maxlength=<span class="hljs-number">50</span>&gt;&lt;/fieldset&gt;
+    &lt;fieldset <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"margin-bottom-20"</span>&gt;
+      &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"f-label text-large text"</span>&gt;职称：&lt;/label&gt;
+      &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"input input-larger"</span> placeholder=<span class="hljs-string">""</span> name=<span class="hljs-string">"job_title"</span> data-msg-required=<span class="hljs-string">"请输入职称"</span> data-rule-maxlength=<span class="hljs-number">50</span>&gt;&lt;/fieldset&gt;
+  &lt;/div&gt;
+  &lt;fieldset&gt;
+    &lt;label <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"f-label"</span>&gt;&lt;/label&gt;
+    &lt;a onclick1=<span class="hljs-string">"do_submit()"</span> onsuccess=do_submit <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"button button-blue button-larger button-boxer"</span> submit-button&gt;注册&lt;/a&gt;&lt;/fieldset&gt;
+  &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"hidden"</span> name=<span class="hljs-string">"user_type"</span> value=<span class="hljs-string">"2"</span>&gt;
+ &lt;/form&gt;</code></pre>
+

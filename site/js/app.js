@@ -524,18 +524,6 @@ $(function() {
     commonNavOver();
   }
 
-  window.renderHtml=function(url, data){
-    $.get(url, function(res){
-      var render = template.compile(res);
-      $('.common-main').html(render(data));
-      commonNavOver()
-    })
-  };
-
-  $('.u-menu').on('click', 'a', function(){
-    $('.u-menu a.now').removeClass('now');
-    $(this).addClass('now');
-  });
 
 })
 
