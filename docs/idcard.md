@@ -6,7 +6,7 @@ tags: idcard,uikit
 ## idcard
 
 ```html
-  <form action="javascript:;" class="form margin-left-40 margin-top-50" isvalid id="reg_form">
+  <form action="javascript:;" class="form" isvalid id="reg_form">
   <input type="hidden" name="avatar" id="avatar">
   <fieldset class="margin-bottom-20">
     <label class="f-label text-large text">昵称：</label>
