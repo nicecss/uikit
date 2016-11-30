@@ -3,7 +3,7 @@ title: idcard
 tags: idcard,uikit
 ---
 
-##idcard
+## idcard
 
 ```html
   <form action="javascript:;" class="form margin-left-40 margin-top-50" isvalid id="reg_form">
