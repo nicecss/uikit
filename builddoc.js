@@ -4,9 +4,12 @@ const marked = require('marked');
 const highlight = require('highlight.js');
 const fm = require( 'front-matter' );
 const glob = require('glob');
+const template = require('art-template');
 
 let docsPath = path.resolve(process.cwd(), 'docs');
 let renderer = new marked.Renderer();
+template.config('base', __dirname);
+template.config('escape', false);
 
 marked.setOptions({
   renderer: renderer,
@@ -39,6 +42,14 @@ renderer.code = function(code, lang) {
 renderer.table = function(header, body){
   return `<table class="docs-table">${header} ${body}</table>`;
 }
+let data = {
+  nav: {
+    base: ['button', 'border'],
+    layout: ['margin', 'padding', 'column'],
+    form: ['input', 'textarea', 'select', 'radio', 'checkbox'],
+    js: ['birthday']
+  }
+};
 
 glob('*.md',{cwd: docsPath}, function(err, files){
   files.forEach(function(filename){
@@ -46,7 +57,14 @@ glob('*.md',{cwd: docsPath}, function(err, files){
       let mdBody = fm(file.toString()).body;
       let html = marked(mdBody);
       let htmlFilename = filename.replace('.md', '');
-      fs.writeFile(`./site/html/${htmlFilename}.html`, html);
-    })
+      console.log(htmlFilename);
+      data.main = html;
+      data.now = htmlFilename;
+      let fullHtml = template('site/_index', data);
+      fs.writeFile(`./site/${htmlFilename}.html`, fullHtml);
+    });
   })
 })
+
+
+
