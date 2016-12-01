@@ -57,7 +57,6 @@ glob('*.md',{cwd: docsPath}, function(err, files){
       let mdBody = fm(file.toString()).body;
       let html = marked(mdBody);
       let htmlFilename = filename.replace('.md', '');
-      console.log(htmlFilename);
       data.main = html;
       data.now = htmlFilename;
       let fullHtml = template('site/_index', data);
