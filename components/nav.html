@@ -1,0 +1,14 @@
+<div class="common-nav">
+  <ul class="u-menu">
+    {{each nav as val key}}
+    <li>
+      <strong>{{key}}</strong>
+      <ul>
+        {{each val as v i}}
+        <li><a href="{{v}}.html" {{if now==v}}class="now" {{/if}}>{{v}}</a></li>
+        {{/each}}
+      </ul>
+    </li>
+    {{/each}}
+  </ul>
+</div>
