@@ -51,6 +51,7 @@ let data = {
   }
 };
 
+var i = 0;
 glob('*.md',{cwd: docsPath}, function(err, files){
   files.forEach(function(filename){
     fs.readFile(path.resolve(docsPath, filename), function(err, file){

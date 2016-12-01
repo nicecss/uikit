@@ -24,11 +24,11 @@ tags: page,uikit
   <a>上一页</a>
   <a>下一页</a>
 </div>
-
 ```
 
 ## page page-right
-``` html  
+
+```html  
 <div class="page page-right">
   <a class="disabled">上一页</a>
   <a class="now">1</a>
@@ -48,10 +48,11 @@ tags: page,uikit
   <a>下一页</a>
 </div>
 </div>
-```  
+```
+
 ## page align-right
 
-``` html 
+```html 
 <div class="pages">
   <div class="pages align-right">
     <div class="page page-right">
@@ -79,8 +80,11 @@ tags: page,uikit
         <i>
         </i>
       </a>
-      <a>下一页
-        <i class="icon icon-next margin-left-15"></i></a>
+      <a class="page-next">
+        <span class="margin-right-5">下一页</span>
+        <i>
+        </i>
+      </a>
     </div>
   </div>
 </div>
