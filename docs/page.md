@@ -47,7 +47,6 @@ tags: page,uikit
   <a>上一页</a>
   <a>下一页</a>
 </div>
-</div>
 ```
 
 ## page align-right
